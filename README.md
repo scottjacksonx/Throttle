@@ -1,5 +1,7 @@
 #Throttle
 
+![Throttle](http://scottjackson.org/software/throttle/throttle.png "Throttle")
+
 Throttle is a small OS X app that lets you throttle bandwidth on port 80 of your Mac.
 
 My number-one use case for Throttle is this: while I'm waiting for a video to finish downloading to my Mac, I sometimes like to go and do other things -- play with my iPhone, play some computer games -- things that involve an internet connection. Thing is, if my Mac's sitting there downloading a video, it'll hog all of what little bandwidth I have. Throttle limits how much bandwidth your Mac can use. That's all there is to it.
