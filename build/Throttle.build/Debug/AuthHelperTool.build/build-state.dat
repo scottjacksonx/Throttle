@@ -1,0 +1,87 @@
+TAuthHelperTool
+v7
+r0
+t288867760.738130
+cCheck dependencies
+cProcessPCH /var/folders/Kp/KpHn0cygEBqp3Dbzc90q+E+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/AppKit-eabgtjyapltcangdbmaobkasrbov/AppKit.h.gch /Developer/SDKs/MacOSX10.6.sdk/System/Library/Frameworks/AppKit.framework/Headers/AppKit.h normal x86_64 objective-c com.apple.compilers.gcc.4_2
+cCompileC build/Throttle.build/Debug/AuthHelperTool.build/Objects-normal/x86_64/AuthHelperTool.o "/Users/scottjacksonx/Documents/Xcode Projects/Cocoa Challenges/Throttle/AuthHelperTool.m" normal x86_64 objective-c com.apple.compilers.gcc.4_2
+cLd "/Users/scottjacksonx/Documents/Xcode Projects/Cocoa Challenges/Throttle/build/Debug/AuthHelperTool" normal x86_64
+
+N/Developer/SDKs/MacOSX10.6.sdk
+c000000004A769DAB00000000000000EE
+t1249287595
+s238
+
+N/Developer/SDKs/MacOSX10.6.sdk/System/Library/Frameworks/AppKit.framework/Headers/AppKit.h
+c000000004A67D2A800000000000017ED
+t1248318120
+s6125
+
+N/Users/scottjacksonx/Documents/Xcode Projects/Cocoa Challenges/Throttle/AuthHelperTool.m
+c000000004B878DA500000000000000B8
+t1267174821
+s184
+
+N/Users/scottjacksonx/Documents/Xcode Projects/Cocoa Challenges/Throttle/build/Debug/AuthHelperTool
+t2
+s0
+
+N/Users/scottjacksonx/Documents/Xcode Projects/Cocoa Challenges/Throttle/build/Throttle.build/Debug/AuthHelperTool.build/Objects-normal/x86_64/AuthHelperTool.LinkFileList
+c000000004B878E2B000000000000009F
+t1267174955
+s159
+
+N/Users/scottjacksonx/Documents/Xcode Projects/Cocoa Challenges/Throttle/build/Throttle.build/Debug/AuthHelperTool.build/Objects-normal/x86_64/AuthHelperTool.o
+t1267174960
+s5448
+
+N/var/folders/Kp/KpHn0cygEBqp3Dbzc90q+E+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/AppKit-eabgtjyapltcangdbmaobkasrbov/AppKit.h.gch
+t1267174960
+s53515280
+
+CCheck dependencies
+r0
+lSLF07#2@18"Check dependencies288867755#288867756#0(0"0(0#1#0"4300882208#0"0#
+
+CCompileC build/Throttle.build/Debug/AuthHelperTool.build/Objects-normal/x86_64/AuthHelperTool.o "/Users/scottjacksonx/Documents/Xcode Projects/Cocoa Challenges/Throttle/AuthHelperTool.m" normal x86_64 objective-c com.apple.compilers.gcc.4_2
+s288867760.490507
+e288867760.637502
+r1
+xCompileC
+xbuild/Throttle.build/Debug/AuthHelperTool.build/Objects-normal/x86_64/AuthHelperTool.o
+x/Users/scottjacksonx/Documents/Xcode Projects/Cocoa Challenges/Throttle/AuthHelperTool.m
+xnormal
+xx86_64
+xobjective-c
+xcom.apple.compilers.gcc.4_2
+o/Users/scottjacksonx/Documents/Xcode Projects/Cocoa Challenges/Throttle/AuthHelperTool.m:13: warning: cannot find interface declaration for 'AuthHelperTool'
+lSLF07#2@96"Compile /Users/scottjacksonx/Documents/Xcode Projects/Cocoa Challenges/Throttle/AuthHelperTool.m288867760#288867760#0(157"/Users/scottjacksonx/Documents/Xcode Projects/Cocoa Challenges/Throttle/AuthHelperTool.m:13: warning: cannot find interface declaration for 'AuthHelperTool'1(22@54"Cannot find interface declaration for 'AuthHelperTool'288867760#0#157#0(6@88"/Users/scottjacksonx/Documents/Xcode Projects/Cocoa Challenges/Throttle/AuthHelperTool.m288867621#13#0#13#0#0"0(0#0#88"/Users/scottjacksonx/Documents/Xcode Projects/Cocoa Challenges/Throttle/AuthHelperTool.m4300882208#1921"    cd "/Users/scottjacksonx/Documents/Xcode Projects/Cocoa Challenges/Throttle"    setenv LANG en_US.US-ASCII    /Developer/usr/bin/gcc-4.2 -x objective-c -arch x86_64 -fmessage-length=0 -pipe -std=gnu99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -isysroot /Developer/SDKs/MacOSX10.6.sdk -mfix-and-continue -mmacosx-version-min=10.6 -gdwarf-2 -iquote "/Users/scottjacksonx/Documents/Xcode Projects/Cocoa Challenges/Throttle/build/Throttle.build/Debug/AuthHelperTool.build/AuthHelperTool-generated-files.hmap" "-I/Users/scottjacksonx/Documents/Xcode Projects/Cocoa Challenges/Throttle/build/Throttle.build/Debug/AuthHelperTool.build/AuthHelperTool-own-target-headers.hmap" "-I/Users/scottjacksonx/Documents/Xcode Projects/Cocoa Challenges/Throttle/build/Throttle.build/Debug/AuthHelperTool.build/AuthHelperTool-all-target-headers.hmap" -iquote "/Users/scottjacksonx/Documents/Xcode Projects/Cocoa Challenges/Throttle/build/Throttle.build/Debug/AuthHelperTool.build/AuthHelperTool-project-headers.hmap" "-F/Users/scottjacksonx/Documents/Xcode Projects/Cocoa Challenges/Throttle/build/Debug" "-I/Users/scottjacksonx/Documents/Xcode Projects/Cocoa Challenges/Throttle/build/Debug/include" "-I/Users/scottjacksonx/Documents/Xcode Projects/Cocoa Challenges/Throttle/build/Throttle.build/Debug/AuthHelperTool.build/DerivedSources/x86_64" "-I/Users/scottjacksonx/Documents/Xcode Projects/Cocoa Challenges/Throttle/build/Throttle.build/Debug/AuthHelperTool.build/DerivedSources" -include /var/folders/Kp/KpHn0cygEBqp3Dbzc90q+E+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/AppKit-eabgtjyapltcangdbmaobkasrbov/AppKit.h -c "/Users/scottjacksonx/Documents/Xcode Projects/Cocoa Challenges/Throttle/AuthHelperTool.m" -o "/Users/scottjacksonx/Documents/Xcode Projects/Cocoa Challenges/Throttle/build/Throttle.build/Debug/AuthHelperTool.build/Objects-normal/x86_64/AuthHelperTool.o"0#
+
+CLd "/Users/scottjacksonx/Documents/Xcode Projects/Cocoa Challenges/Throttle/build/Debug/AuthHelperTool" normal x86_64
+s288867760.637606
+e288867760.738083
+r0
+xLd
+x/Users/scottjacksonx/Documents/Xcode Projects/Cocoa Challenges/Throttle/build/Debug/AuthHelperTool
+xnormal
+xx86_64
+oUndefined symbols:
+o  "_main", referenced from:
+o      start in crt1.10.6.o
+old: symbol(s) not found
+ocollect2: ld returned 1 exit status
+lSLF07#2@103"Link /Users/scottjacksonx/Documents/Xcode Projects/Cocoa Challenges/Throttle/build/Debug/AuthHelperTool288867760#288867760#0(134"Undefined symbols:  "_main", referenced from:      start in crt1.10.6.old: symbol(s) not foundcollect2: ld returned 1 exit status4(4@25""_main", referenced from:288867760#19#28#0(6@0"288867760#0#0#0#0#0"0(13@20"Start in crt1.10.6.o288867760#47#27#0(6@0"288867760#0#0#0#0#0"0(13@19"Symbol(s) not found288867760#74#24#0(6@0"288867760#0#0#0#0#0"0(13@35"Collect2: ld returned 1 exit status288867760#98#36#0(6@0"288867760#0#0#0#0#0"0(0#0#0"4300882208#735"    cd "/Users/scottjacksonx/Documents/Xcode Projects/Cocoa Challenges/Throttle"    setenv MACOSX_DEPLOYMENT_TARGET 10.6    /Developer/usr/bin/gcc-4.2 -arch x86_64 -isysroot /Developer/SDKs/MacOSX10.6.sdk "-L/Users/scottjacksonx/Documents/Xcode Projects/Cocoa Challenges/Throttle/build/Debug" "-F/Users/scottjacksonx/Documents/Xcode Projects/Cocoa Challenges/Throttle/build/Debug" -filelist "/Users/scottjacksonx/Documents/Xcode Projects/Cocoa Challenges/Throttle/build/Throttle.build/Debug/AuthHelperTool.build/Objects-normal/x86_64/AuthHelperTool.LinkFileList" -mmacosx-version-min=10.6 -framework Foundation -framework AppKit -o "/Users/scottjacksonx/Documents/Xcode Projects/Cocoa Challenges/Throttle/build/Debug/AuthHelperTool"1#
+
+CProcessPCH /var/folders/Kp/KpHn0cygEBqp3Dbzc90q+E+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/AppKit-eabgtjyapltcangdbmaobkasrbov/AppKit.h.gch /Developer/SDKs/MacOSX10.6.sdk/System/Library/Frameworks/AppKit.framework/Headers/AppKit.h normal x86_64 objective-c com.apple.compilers.gcc.4_2
+s288867756.032284
+e288867760.490315
+r1
+xProcessPCH
+x/var/folders/Kp/KpHn0cygEBqp3Dbzc90q+E+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/AppKit-eabgtjyapltcangdbmaobkasrbov/AppKit.h.gch
+x/Developer/SDKs/MacOSX10.6.sdk/System/Library/Frameworks/AppKit.framework/Headers/AppKit.h
+xnormal
+xx86_64
+xobjective-c
+xcom.apple.compilers.gcc.4_2
+lSLF07#2@101"Precompile /Developer/SDKs/MacOSX10.6.sdk/System/Library/Frameworks/AppKit.framework/Headers/AppKit.h288867756#288867760#0(0"0(0#0#90"/Developer/SDKs/MacOSX10.6.sdk/System/Library/Frameworks/AppKit.framework/Headers/AppKit.h4300882208#1762"    cd "/Users/scottjacksonx/Documents/Xcode Projects/Cocoa Challenges/Throttle"    setenv LANG en_US.US-ASCII    /Developer/usr/bin/gcc-4.2 -x objective-c-header -arch x86_64 -fmessage-length=0 -pipe -std=gnu99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -isysroot /Developer/SDKs/MacOSX10.6.sdk -mfix-and-continue -mmacosx-version-min=10.6 -gdwarf-2 -iquote "/Users/scottjacksonx/Documents/Xcode Projects/Cocoa Challenges/Throttle/build/Throttle.build/Debug/AuthHelperTool.build/AuthHelperTool-generated-files.hmap" "-I/Users/scottjacksonx/Documents/Xcode Projects/Cocoa Challenges/Throttle/build/Throttle.build/Debug/AuthHelperTool.build/AuthHelperTool-own-target-headers.hmap" "-I/Users/scottjacksonx/Documents/Xcode Projects/Cocoa Challenges/Throttle/build/Throttle.build/Debug/AuthHelperTool.build/AuthHelperTool-all-target-headers.hmap" -iquote "/Users/scottjacksonx/Documents/Xcode Projects/Cocoa Challenges/Throttle/build/Throttle.build/Debug/AuthHelperTool.build/AuthHelperTool-project-headers.hmap" "-F/Users/scottjacksonx/Documents/Xcode Projects/Cocoa Challenges/Throttle/build/Debug" "-I/Users/scottjacksonx/Documents/Xcode Projects/Cocoa Challenges/Throttle/build/Debug/include" "-I/Users/scottjacksonx/Documents/Xcode Projects/Cocoa Challenges/Throttle/build/Throttle.build/Debug/AuthHelperTool.build/DerivedSources/x86_64" "-I/Users/scottjacksonx/Documents/Xcode Projects/Cocoa Challenges/Throttle/build/Throttle.build/Debug/AuthHelperTool.build/DerivedSources" -c /Developer/SDKs/MacOSX10.6.sdk/System/Library/Frameworks/AppKit.framework/Headers/AppKit.h -o /var/folders/Kp/KpHn0cygEBqp3Dbzc90q+E+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/AppKit-eabgtjyapltcangdbmaobkasrbov/AppKit.h.gch0#
+
