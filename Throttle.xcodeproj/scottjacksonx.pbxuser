@@ -16,9 +16,9 @@
 	};
 	256AC3D90F4B6AC300CF3369 /* ThrottleAppDelegate.m */ = {
 		uiCtxt = {
-			sepNavIntBoundsRect = "{{0, 0}, {828, 520}}";
-			sepNavSelRange = "{0, 0}";
-			sepNavVisRange = "{0, 374}";
+			sepNavIntBoundsRect = "{{0, 0}, {828, 515}}";
+			sepNavSelRange = "{466, 0}";
+			sepNavVisRange = "{0, 475}";
 		};
 	};
 	29B97313FDCFA39411CA2CEA /* Project object */ = {
@@ -91,23 +91,32 @@
 					PBXFileDataSource_Warnings_ColumnID,
 				);
 			};
-			PBXPerProjectTemplateStateSaveDate = 288876737;
-			PBXWorkspaceStateSaveDate = 288876737;
+			PBXPerProjectTemplateStateSaveDate = 288877938;
+			PBXWorkspaceStateSaveDate = 288877938;
 		};
 		perUserProjectItems = {
-			57C3D01B1137E8A80010DB35 = 57C3D01B1137E8A80010DB35 /* PlistBookmark */;
-			57C3D01C1137E8A80010DB35 = 57C3D01C1137E8A80010DB35 /* PBXTextBookmark */;
-			57C3D01D1137E8A80010DB35 = 57C3D01D1137E8A80010DB35 /* PBXTextBookmark */;
-			57C3D01E1137E8A80010DB35 = 57C3D01E1137E8A80010DB35 /* PBXTextBookmark */;
-			57C3D01F1137E8A80010DB35 = 57C3D01F1137E8A80010DB35 /* PBXTextBookmark */;
-			57C3D0201137E8A80010DB35 = 57C3D0201137E8A80010DB35 /* PBXTextBookmark */;
-			57C3D0211137E8A80010DB35 = 57C3D0211137E8A80010DB35 /* PBXTextBookmark */;
-			57C3D02A1137E8CC0010DB35 /* PBXTextBookmark */ = 57C3D02A1137E8CC0010DB35 /* PBXTextBookmark */;
-			57C3D0391137E8D50010DB35 /* PBXTextBookmark */ = 57C3D0391137E8D50010DB35 /* PBXTextBookmark */;
+			57767D4B1137ED8C009359A3 /* PBXTextBookmark */ = 57767D4B1137ED8C009359A3 /* PBXTextBookmark */;
+			57C3D01C1137E8A80010DB35 /* PBXTextBookmark */ = 57C3D01C1137E8A80010DB35 /* PBXTextBookmark */;
+			57C3D01F1137E8A80010DB35 /* PBXTextBookmark */ = 57C3D01F1137E8A80010DB35 /* PBXTextBookmark */;
+			57C3D05D1137EBC10010DB35 /* PlistBookmark */ = 57C3D05D1137EBC10010DB35 /* PlistBookmark */;
+			57C3D05F1137EBC10010DB35 /* PBXTextBookmark */ = 57C3D05F1137EBC10010DB35 /* PBXTextBookmark */;
+			57C3D0601137EBC10010DB35 /* PBXTextBookmark */ = 57C3D0601137EBC10010DB35 /* PBXTextBookmark */;
+			57D7A34F1137EC7A00DE50F5 /* PBXTextBookmark */ = 57D7A34F1137EC7A00DE50F5 /* PBXTextBookmark */;
+			57D7A3601137ED5500DE50F5 /* PBXTextBookmark */ = 57D7A3601137ED5500DE50F5 /* PBXTextBookmark */;
 		};
 		sourceControlManager = 57C3CD651137AE590010DB35 /* Source Control */;
 		userBuildSettings = {
 		};
+	};
+	57767D4B1137ED8C009359A3 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 57C3CD631137AE590010DB35 /* AppController.m */;
+		name = "AppController.m: 23";
+		rLen = 0;
+		rLoc = 452;
+		rType = 0;
+		vrLen = 542;
+		vrLoc = 357;
 	};
 	57C3CD551137AE4D0010DB35 /* Throttle */ = {
 		isa = PBXExecutable;
@@ -149,8 +158,8 @@
 	57C3CD631137AE590010DB35 /* AppController.m */ = {
 		uiCtxt = {
 			sepNavIntBoundsRect = "{{0, 0}, {828, 2400}}";
-			sepNavSelRange = "{213, 0}";
-			sepNavVisRange = "{0, 667}";
+			sepNavSelRange = "{452, 0}";
+			sepNavVisRange = "{357, 542}";
 		};
 	};
 	57C3CD651137AE590010DB35 /* Source Control */ = {
@@ -167,18 +176,6 @@
 		isa = PBXCodeSenseManager;
 		indexTemplatePath = "";
 	};
-	57C3D01B1137E8A80010DB35 /* PlistBookmark */ = {
-		isa = PlistBookmark;
-		fRef = 8D1107310486CEB800E47090 /* Throttle-Info.plist */;
-		fallbackIsa = PBXBookmark;
-		isK = 0;
-		kPath = (
-			CFBundleVersion,
-		);
-		name = "/Users/scottjacksonx/Documents/Xcode Projects/Cocoa Challenges/Throttle/Throttle-Info.plist";
-		rLen = 0;
-		rLoc = 9223372036854775808;
-	};
 	57C3D01C1137E8A80010DB35 /* PBXTextBookmark */ = {
 		isa = PBXTextBookmark;
 		fRef = 089C165DFE840E0CC02AAC07 /* English */;
@@ -187,26 +184,6 @@
 		rLoc = 0;
 		rType = 0;
 		vrLen = 45;
-		vrLoc = 0;
-	};
-	57C3D01D1137E8A80010DB35 /* PBXTextBookmark */ = {
-		isa = PBXTextBookmark;
-		fRef = 256AC3D80F4B6AC300CF3369 /* ThrottleAppDelegate.h */;
-		name = "ThrottleAppDelegate.h: 1";
-		rLen = 0;
-		rLoc = 0;
-		rType = 0;
-		vrLen = 320;
-		vrLoc = 0;
-	};
-	57C3D01E1137E8A80010DB35 /* PBXTextBookmark */ = {
-		isa = PBXTextBookmark;
-		fRef = 256AC3D90F4B6AC300CF3369 /* ThrottleAppDelegate.m */;
-		name = "ThrottleAppDelegate.m: 1";
-		rLen = 0;
-		rLoc = 0;
-		rType = 0;
-		vrLen = 374;
 		vrLoc = 0;
 	};
 	57C3D01F1137E8A80010DB35 /* PBXTextBookmark */ = {
@@ -219,45 +196,64 @@
 		vrLen = 452;
 		vrLoc = 0;
 	};
-	57C3D0201137E8A80010DB35 /* PBXTextBookmark */ = {
-		isa = PBXTextBookmark;
-		fRef = 57C3CD631137AE590010DB35 /* AppController.m */;
-		name = "AppController.m: 13";
+	57C3D0581137EA510010DB35 /* README.md */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {2665, 510}}";
+			sepNavSelRange = "{772, 0}";
+			sepNavVisRange = "{0, 772}";
+		};
+	};
+	57C3D05D1137EBC10010DB35 /* PlistBookmark */ = {
+		isa = PlistBookmark;
+		fRef = 8D1107310486CEB800E47090 /* Throttle-Info.plist */;
+		fallbackIsa = PBXBookmark;
+		isK = 0;
+		kPath = (
+			CFBundleVersion,
+		);
+		name = "/Users/scottjacksonx/Documents/dev/git/Throttle/Throttle-Info.plist";
 		rLen = 0;
-		rLoc = 202;
+		rLoc = 9223372036854775808;
+	};
+	57C3D05F1137EBC10010DB35 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 256AC3D80F4B6AC300CF3369 /* ThrottleAppDelegate.h */;
+		name = "ThrottleAppDelegate.h: 1";
+		rLen = 0;
+		rLoc = 0;
 		rType = 0;
-		vrLen = 667;
+		vrLen = 320;
 		vrLoc = 0;
 	};
-	57C3D0211137E8A80010DB35 /* PBXTextBookmark */ = {
+	57C3D0601137EBC10010DB35 /* PBXTextBookmark */ = {
 		isa = PBXTextBookmark;
-		fRef = 57C3CD631137AE590010DB35 /* AppController.m */;
-		name = "AppController.m: 13";
+		fRef = 256AC3D90F4B6AC300CF3369 /* ThrottleAppDelegate.m */;
+		name = "ThrottleAppDelegate.m: 21";
 		rLen = 0;
-		rLoc = 202;
+		rLoc = 466;
 		rType = 0;
-		vrLen = 667;
+		vrLen = 475;
 		vrLoc = 0;
 	};
-	57C3D02A1137E8CC0010DB35 /* PBXTextBookmark */ = {
+	57D7A34F1137EC7A00DE50F5 /* PBXTextBookmark */ = {
 		isa = PBXTextBookmark;
-		fRef = 57C3CD631137AE590010DB35 /* AppController.m */;
-		name = "AppController.m: 23";
+		fRef = 57C3D0581137EA510010DB35 /* README.md */;
+		name = "README.md: 11";
 		rLen = 0;
-		rLoc = 436;
+		rLoc = 772;
 		rType = 0;
-		vrLen = 610;
+		vrLen = 772;
 		vrLoc = 0;
 	};
-	57C3D0391137E8D50010DB35 /* PBXTextBookmark */ = {
+	57D7A3601137ED5500DE50F5 /* PBXTextBookmark */ = {
 		isa = PBXTextBookmark;
 		fRef = 57C3CD631137AE590010DB35 /* AppController.m */;
-		name = "AppController.m: 23";
+		name = "AppController.m: 14";
 		rLen = 0;
-		rLoc = 452;
+		rLoc = 213;
 		rType = 0;
-		vrLen = 667;
-		vrLoc = 0;
+		vrLen = 613;
+		vrLoc = 357;
 	};
 	8D1107260486CEB800E47090 /* Throttle */ = {
 		activeExec = 0;
