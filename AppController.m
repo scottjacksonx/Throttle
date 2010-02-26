@@ -15,7 +15,7 @@
 {
     [super init];
     [self setValue:@"KB/s"  forKey:@"units"];
-    [self setValue:[NSNumber numberWithInt:1] forKey:@"amountToThrottleTo"];
+    [self setValue:[NSNumber numberWithInt:5] forKey:@"amountToThrottleTo"];
     [self setValue:0 forKey:@"throttling"];
     return self;
 }
@@ -47,7 +47,8 @@
 
 - (IBAction)toggleThrottling:(id)sender
 {
-    if (!throttling) {
+    
+    if (!throttling && amountToThrottleTo != nil) {
         NSLog(@"Throttling back to %@ %@", amountToThrottleTo, units);
         
         NSString* ipfwPath = @"/sbin/ipfw";
@@ -75,7 +76,7 @@
         [throttleTask setArguments:arguments];
         
         [throttleTask launch];
-        NSLog(@"Task launched with arguments: %@", arguments);
+        NSLog(@"cocoasudo launched with arguments: %@", arguments);
         [throttleTask waitUntilExit];
         
         /* Attach the pipe to the outgoing traffic on port 80. */
@@ -88,17 +89,17 @@
         arguments = [NSArray arrayWithObjects:ipfwPath, add, one, pipe, one, srcport, eighty, nil];
         [task2 setArguments:arguments];
         [task2 launch];
-        NSLog(@"Task launched with arguments: %@", arguments);
+        NSLog(@"cocoasudo launched with arguments: %@", arguments);
         [task2 waitUntilExit];
         
         throttling = [NSNumber numberWithInt:1];
         
+        NSLog(@"Throttling has begun.");
+        
         [throttleButton setTitle:@"Cancel throttling"];
         [textField setEditable:NO];
         [textField setSelectable:NO];
-        [comboBox setEditable:NO];
-        [comboBox setSelectable:NO];
-    } else {
+    } else if (throttling) {
         NSTask* stopThrottleTask = [[NSTask alloc] init];
         NSString* resourcesPath = [[NSBundle mainBundle] resourcePath]; // Gets path to Resources folder.
         NSString* cocoasudoPath = [resourcesPath stringByAppendingPathComponent:@"cocoasudo"];
@@ -112,16 +113,20 @@
         [stopThrottleTask setArguments:arguments];
         
         [stopThrottleTask launch];
+        NSLog(@"cocoasudo launched with arguments: %@", arguments);
         [stopThrottleTask waitUntilExit];
         
         throttling = [NSNumber numberWithInt:0];
         
+        NSLog(@"Throttling has stopped.");
+        
         [throttleButton setTitle:@"Begin throttling"];
         [textField setEditable:YES];
         [textField setSelectable:YES];
-        [comboBox setEditable:YES];
-        [comboBox setSelectable:YES];
+    } else {
+        NSLog(@"Cannot begin throttling -- text field is empty.");
     }
+
 }
 
 @end

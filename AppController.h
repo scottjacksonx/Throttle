@@ -11,7 +11,7 @@
 
 @interface AppController : NSObject {
     IBOutlet NSTextField* textField;
-    IBOutlet NSComboBox* comboBox;
+    IBOutlet NSPopUpButton* comboBox;
     IBOutlet NSButton* throttleButton;
     NSString* units;
     NSNumber* amountToThrottleTo;
