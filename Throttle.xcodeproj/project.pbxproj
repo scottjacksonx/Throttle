@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		1DDD58160DA1D0A300B32029 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1DDD58140DA1D0A300B32029 /* MainMenu.xib */; };
 		256AC3DA0F4B6AC300CF3369 /* ThrottleAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 256AC3D90F4B6AC300CF3369 /* ThrottleAppDelegate.m */; };
+		5791F2C31138B54B00D8B421 /* ntwrk_32.icns in Resources */ = {isa = PBXBuildFile; fileRef = 5791F2C21138B54B00D8B421 /* ntwrk_32.icns */; };
 		57C3CD641137AE590010DB35 /* AppController.m in Sources */ = {isa = PBXBuildFile; fileRef = 57C3CD631137AE590010DB35 /* AppController.m */; };
 		57C3CF091137C86C0010DB35 /* cocoasudo in Resources */ = {isa = PBXBuildFile; fileRef = 57C3CF081137C86C0010DB35 /* cocoasudo */; };
 		57C3D0591137EA510010DB35 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 57C3D0581137EA510010DB35 /* README.md */; };
@@ -28,6 +29,7 @@
 		29B97316FDCFA39411CA2CEA /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		29B97324FDCFA39411CA2CEA /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = /System/Library/Frameworks/AppKit.framework; sourceTree = "<absolute>"; };
 		29B97325FDCFA39411CA2CEA /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = /System/Library/Frameworks/Foundation.framework; sourceTree = "<absolute>"; };
+		5791F2C21138B54B00D8B421 /* ntwrk_32.icns */ = {isa = PBXFileReference; lastKnownFileType = image.icns; path = ntwrk_32.icns; sourceTree = "<group>"; };
 		57C3CD621137AE590010DB35 /* AppController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppController.h; sourceTree = "<group>"; };
 		57C3CD631137AE590010DB35 /* AppController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppController.m; sourceTree = "<group>"; };
 		57C3CF081137C86C0010DB35 /* cocoasudo */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.executable"; path = cocoasudo; sourceTree = "<group>"; };
@@ -109,6 +111,7 @@
 		29B97317FDCFA39411CA2CEA /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				5791F2C21138B54B00D8B421 /* ntwrk_32.icns */,
 				57C3D0581137EA510010DB35 /* README.md */,
 				57C3CF081137C86C0010DB35 /* cocoasudo */,
 				8D1107310486CEB800E47090 /* Throttle-Info.plist */,
@@ -174,6 +177,7 @@
 				1DDD58160DA1D0A300B32029 /* MainMenu.xib in Resources */,
 				57C3CF091137C86C0010DB35 /* cocoasudo in Resources */,
 				57C3D0591137EA510010DB35 /* README.md in Resources */,
+				5791F2C31138B54B00D8B421 /* ntwrk_32.icns in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

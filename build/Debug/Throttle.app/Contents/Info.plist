@@ -6,6 +6,8 @@
 	<string>English</string>
 	<key>CFBundleExecutable</key>
 	<string>Throttle</string>
+	<key>CFBundleIconFile</key>
+	<string>ntwrk_32.icns</string>
 	<key>CFBundleIdentifier</key>
 	<string>com.yourcompany.Throttle</string>
 	<key>CFBundleInfoDictionaryVersion</key>

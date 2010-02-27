@@ -92,13 +92,18 @@
         NSLog(@"cocoasudo launched with arguments: %@", arguments);
         [task2 waitUntilExit];
         
-        throttling = [NSNumber numberWithInt:1];
-        
-        NSLog(@"Throttling has begun.");
-        
-        [throttleButton setTitle:@"Cancel throttling"];
-        [textField setEditable:NO];
-        [textField setSelectable:NO];
+        if ([task2 terminationStatus] == 0) {
+            throttling = [NSNumber numberWithInt:1];
+            
+            NSLog(@"Throttling has begun.");
+            
+            [throttleButton setTitle:@"Cancel throttling"];
+            [textField setEditable:NO];
+            [textField setSelectable:NO];
+        } else {
+            NSLog(@"Permission not granted to begin throttling.");
+        }
+
     } else if (throttling) {
         NSTask* stopThrottleTask = [[NSTask alloc] init];
         NSString* resourcesPath = [[NSBundle mainBundle] resourcePath]; // Gets path to Resources folder.
@@ -116,13 +121,17 @@
         NSLog(@"cocoasudo launched with arguments: %@", arguments);
         [stopThrottleTask waitUntilExit];
         
-        throttling = [NSNumber numberWithInt:0];
-        
-        NSLog(@"Throttling has stopped.");
-        
-        [throttleButton setTitle:@"Begin throttling"];
-        [textField setEditable:YES];
-        [textField setSelectable:YES];
+        if ([stopThrottleTask terminationStatus] == 0) {
+            throttling = [NSNumber numberWithInt:0];
+            
+            NSLog(@"Throttling has stopped.");
+            
+            [throttleButton setTitle:@"Begin throttling"];
+            [textField setEditable:YES];
+            [textField setSelectable:YES];
+        } else {
+            NSLog(@"Permission not granted to stop throttling.");
+        }
     } else {
         NSLog(@"Cannot begin throttling -- text field is empty.");
     }
