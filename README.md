@@ -1,6 +1,6 @@
 #Throttle
 
-![Throttle](http://scottjackson.org/software/throttle/throttle.png "Throttle")
+![Throttle](http://scottjackson.org/software/img/throttle.png "Throttle")
 
 Throttle is a small OS X app that lets you throttle bandwidth on your Mac.
 
