@@ -124,4 +124,35 @@
 
 }
 
+- (IBAction)shouldClose:(id)sender
+{
+    NSLog(@"Checking to see if I should close.");
+    if (throttling) {
+        NSString* title = @"Really Quit?";
+        NSString* msg = @"Your bandwidth is still being throttled.\n\nIf you quit now, the only way to turn off throttling is through the Terminal. Are you really sure you want to quit?";
+        NSString* yesText = @"Quit";
+        NSString* noText = @"Don't quit";
+        NSString* alternateText = @"Turn off throttling and then quit";
+        
+        NSInteger quit = NSRunAlertPanel(title, msg, yesText, noText, alternateText);
+        if (quit == NSAlertDefaultReturn) {
+            NSLog(@"User definitely wants to quit.");
+            [NSApp terminate:nil];
+        } else if (quit == NSAlertAlternateReturn) {
+            NSLog(@"User doesn't want to quit.");
+        } else if (quit == NSAlertOtherReturn) {
+            NSLog(@"User wants to turn off throttling and quit.");
+            [self toggleThrottling:sender];
+            [NSApp terminate:nil];
+        } else {
+            NSLog(@"Error.");
+        }
+
+
+    } else {
+        [NSApp terminate:nil];
+    }
+
+}
+
 @end

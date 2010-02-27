@@ -10,6 +10,7 @@
 
 
 @interface AppController : NSObject {
+    IBOutlet NSWindow* window;
     IBOutlet NSTextField* textField;
     IBOutlet NSPopUpButton* unitsBox;
     IBOutlet NSButton* throttleButton;
@@ -28,6 +29,7 @@
 
 
 - (IBAction)toggleThrottling:(id)sender;
+- (IBAction)shouldClose:(id)sender;
 
 
 @end
