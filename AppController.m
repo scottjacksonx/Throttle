@@ -155,14 +155,4 @@
 
 }
 
-- (IBAction)showPrefsWindow:(id)sender
-{
-    NSLog(@"Showing preferences window.");
-}
-
-- (IBAction)hidePrefsWindow:(id)sender
-{
-    NSLog(@"Hiding preferences window.");
-}
-
 @end

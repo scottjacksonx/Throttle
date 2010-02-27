@@ -24,8 +24,6 @@
 
 
 - (IBAction)toggleThrottling:(id)sender;
-- (IBAction)showPrefsWindow:(id)sender;
-- (IBAction)hidePrefsWindow:(id)sender;
 
 
 @end
