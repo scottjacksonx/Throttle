@@ -13,13 +13,19 @@
     IBOutlet NSTextField* textField;
     IBOutlet NSPopUpButton* comboBox;
     IBOutlet NSButton* throttleButton;
+    IBOutlet NSTextField* portField;
+    IBOutlet NSButton* confirmPrefsButton;
+    IBOutlet NSWindow* prefsWindow;
     NSString* units;
     NSNumber* amountToThrottleTo;
+    NSNumber* port;
     NSNumber* throttling;
 }
 
 
 - (IBAction)toggleThrottling:(id)sender;
+- (IBAction)showPrefsWindow:(id)sender;
+- (IBAction)hidePrefsWindow:(id)sender;
 
 
 @end

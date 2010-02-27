@@ -17,6 +17,7 @@
     [self setValue:@"KB/s"  forKey:@"units"];
     [self setValue:[NSNumber numberWithInt:5] forKey:@"amountToThrottleTo"];
     [self setValue:0 forKey:@"throttling"];
+    [self setValue:[NSNumber numberWithInt:80] forKey:@"port"];
     return self;
 }
 
@@ -45,11 +46,23 @@
     NSLog(@"units is now %@", units);
 }
 
+- (NSNumber*)port
+{
+    NSLog(@"Port to throttle is %@", port);
+    return port;
+}
+
+- (void)setPort:(NSNumber*)n
+{
+    port = n;
+    NSLog(@"Port to throttle is now %@", port);
+}
+
 - (IBAction)toggleThrottling:(id)sender
 {
     
-    if (!throttling && amountToThrottleTo != nil) {
-        NSLog(@"Throttling back to %@ %@", amountToThrottleTo, units);
+    if (!throttling && amountToThrottleTo != nil && port != nil) {
+        NSLog(@"Attempting to begin throttling to %@ %@ on port %@", amountToThrottleTo, units, port);
         
         NSString* ipfwPath = @"/sbin/ipfw";
         NSString* pipe = @"pipe";
@@ -66,40 +79,44 @@
         
         /* Create a pipe that only allows up to `amount` through. */
         
-        NSTask* throttleTask = [[NSTask alloc] init];
+        NSTask* makePipeTask = [[NSTask alloc] init];
         NSString* resourcesPath = [[NSBundle mainBundle] resourcePath]; // Gets path to Resources folder.
         NSString* cocoasudoPath = [resourcesPath stringByAppendingPathComponent:@"cocoasudo"];
         
-        [throttleTask setLaunchPath:cocoasudoPath];
+        [makePipeTask setLaunchPath:cocoasudoPath];
         
         NSArray* arguments = [NSArray arrayWithObjects:ipfwPath, pipe, one, config, bw, amount, nil];
-        [throttleTask setArguments:arguments];
+        [makePipeTask setArguments:arguments];
         
-        [throttleTask launch];
+        [makePipeTask launch];
         NSLog(@"cocoasudo launched with arguments: %@", arguments);
-        [throttleTask waitUntilExit];
+        [makePipeTask waitUntilExit];
         
-        /* Attach the pipe to the outgoing traffic on port 80. */
-        
-        NSString* add = @"add";
-        NSString* srcport = @"src-port";
-        NSString* eighty = @"80";
-        NSTask* task2 = [[NSTask alloc] init];
-        [task2 setLaunchPath:cocoasudoPath];
-        arguments = [NSArray arrayWithObjects:ipfwPath, add, one, pipe, one, srcport, eighty, nil];
-        [task2 setArguments:arguments];
-        [task2 launch];
-        NSLog(@"cocoasudo launched with arguments: %@", arguments);
-        [task2 waitUntilExit];
-        
-        if ([task2 terminationStatus] == 0) {
-            throttling = [NSNumber numberWithInt:1];
+        if ([makePipeTask terminationStatus] == 0) {
+            /* Attach the pipe to the traffic on `port`. */
             
-            NSLog(@"Throttling has begun.");
+            NSString* add = @"add";
+            NSString* srcport = @"src-port";
+            NSTask* throttleTask = [[NSTask alloc] init];
+            [throttleTask setLaunchPath:cocoasudoPath];
+            arguments = [NSArray arrayWithObjects:ipfwPath, add, one, pipe, one, srcport, [port stringValue], nil];
+            [throttleTask setArguments:arguments];
+            [throttleTask launch];
+            NSLog(@"cocoasudo launched with arguments: %@", arguments);
+            [throttleTask waitUntilExit];
             
-            [throttleButton setTitle:@"Cancel throttling"];
-            [textField setEditable:NO];
-            [textField setSelectable:NO];
+            if ([throttleTask terminationStatus] == 0) {
+                throttling = [NSNumber numberWithInt:1];
+                
+                NSLog(@"Throttling has begun.");
+                NSLog(@"Throttling bandwidth on port %@ to %@%@", port, amountToThrottleTo, units);
+                
+                [throttleButton setTitle:@"Cancel throttling"];
+                [textField setEditable:NO];
+                [textField setSelectable:NO];
+            } else {
+                NSLog(@"Permission not granted to begin throttling.");
+            }
         } else {
             NSLog(@"Permission not granted to begin throttling.");
         }
@@ -133,9 +150,19 @@
             NSLog(@"Permission not granted to stop throttling.");
         }
     } else {
-        NSLog(@"Cannot begin throttling -- text field is empty.");
+        NSLog(@"Cannot begin throttling -- amount field and/or port field is empty.");
     }
 
+}
+
+- (IBAction)showPrefsWindow:(id)sender
+{
+    NSLog(@"Showing preferences window.");
+}
+
+- (IBAction)hidePrefsWindow:(id)sender
+{
+    NSLog(@"Hiding preferences window.");
 }
 
 @end
