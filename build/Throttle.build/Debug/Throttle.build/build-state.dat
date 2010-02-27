@@ -1,7 +1,7 @@
 TThrottle
 v7
 r0
-t288934555.192861
+t288969463.424146
 cCheck dependencies
 cProcessInfoPlistFile /Users/scottjacksonx/Documents/dev/git/Throttle/build/Debug/Throttle.app/Contents/Info.plist Throttle-Info.plist
 cCopyStringsFile /Users/scottjacksonx/Documents/dev/git/Throttle/build/Debug/Throttle.app/Contents/Resources/English.lproj/InfoPlist.strings English.lproj/InfoPlist.strings
@@ -128,15 +128,15 @@ s256
 i<Cocoa/Cocoa.h>
 
 N/Users/scottjacksonx/Documents/dev/git/Throttle/AppController.h
-c000000004B889319000000000000024F
-t1267241753
-s591
+c000000004B891B2800000000000002E6
+t1267276584
+s742
 i<Cocoa/Cocoa.h>
 
 N/Users/scottjacksonx/Documents/dev/git/Throttle/AppController.m
-c000000004B88931A00000000000013C2
-t1267241754
-s5058
+c000000004B891B7400000000000011E0
+t1267276660
+s4576
 i"AppController.h"
 
 N/Users/scottjacksonx/Documents/dev/git/Throttle/English.lproj/InfoPlist.strings
@@ -145,14 +145,14 @@ t1267168972
 s45
 
 N/Users/scottjacksonx/Documents/dev/git/Throttle/English.lproj/MainMenu.xib
-c000000004B88915A0000000000017372
-t1267241306
-s95090
+c000000004B88F2370000000000017F1B
+t1267266103
+s98075
 
 N/Users/scottjacksonx/Documents/dev/git/Throttle/README.md
-c000000004B8892540000000000000582
-t1267241556
-s1410
+c000000004B88BA9C000000000000057D
+t1267251868
+s1405
 
 N/Users/scottjacksonx/Documents/dev/git/Throttle/ThrottleAppDelegate.h
 c000000004B8776CC0000000000000140
@@ -173,7 +173,7 @@ s147
 i<Cocoa/Cocoa.h>
 
 N/Users/scottjacksonx/Documents/dev/git/Throttle/build/Debug/Throttle.app
-t1267241755
+t1267276663
 s102
 
 N/Users/scottjacksonx/Documents/dev/git/Throttle/build/Debug/Throttle.app/Contents/Info.plist
@@ -181,8 +181,8 @@ t1267236317
 s950
 
 N/Users/scottjacksonx/Documents/dev/git/Throttle/build/Debug/Throttle.app/Contents/MacOS/Throttle
-t1267241755
-s22448
+t1267276663
+s22440
 
 N/Users/scottjacksonx/Documents/dev/git/Throttle/build/Debug/Throttle.app/Contents/PkgInfo
 t1267236317
@@ -193,12 +193,12 @@ t1267169268
 s92
 
 N/Users/scottjacksonx/Documents/dev/git/Throttle/build/Debug/Throttle.app/Contents/Resources/English.lproj/MainMenu.nib
-t1267241309
-s17378
+t1267276138
+s18129
 
 N/Users/scottjacksonx/Documents/dev/git/Throttle/build/Debug/Throttle.app/Contents/Resources/README.md
-t1267241754
-s1410
+t1267263194
+s1405
 
 N/Users/scottjacksonx/Documents/dev/git/Throttle/build/Debug/Throttle.app/Contents/Resources/cocoasudo
 t1267176356
@@ -209,8 +209,8 @@ t1267236317
 s3532
 
 N/Users/scottjacksonx/Documents/dev/git/Throttle/build/Throttle.build/Debug/Throttle.build/Objects-normal/x86_64/AppController.o
-t1267241755
-s30292
+t1267276663
+s29920
 
 N/Users/scottjacksonx/Documents/dev/git/Throttle/build/Throttle.build/Debug/Throttle.build/Objects-normal/x86_64/Throttle.LinkFileList
 c000000004B87B145000000000000017D
@@ -256,7 +256,7 @@ s1015
 
 CCheck dependencies
 r0
-lSLF07#2@18"Check dependencies288934554#288934554#0(0"0(0#1#0"4300882208#0"0#
+lSLF07#2@18"Check dependencies288969462#288969462#0(0"0(0#1#0"4300882208#0"0#
 
 CCompileC build/Throttle.build/Debug/Throttle.build/Objects-normal/x86_64/AppController.o "/Users/scottjacksonx/Documents/Xcode Projects/Cocoa Challenges/Throttle/AppController.m" normal x86_64 objective-c com.apple.compilers.gcc.4_2
 s288876501.291000
@@ -272,8 +272,8 @@ xcom.apple.compilers.gcc.4_2
 lSLF07#2@95"Compile /Users/scottjacksonx/Documents/Xcode Projects/Cocoa Challenges/Throttle/AppController.m288876501#288876501#0(0"0(0#0#87"/Users/scottjacksonx/Documents/Xcode Projects/Cocoa Challenges/Throttle/AppController.m4300882208#1873"    cd "/Users/scottjacksonx/Documents/Xcode Projects/Cocoa Challenges/Throttle"    setenv LANG en_US.US-ASCII    /Developer/usr/bin/gcc-4.2 -x objective-c -arch x86_64 -fmessage-length=0 -pipe -std=gnu99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -isysroot /Developer/SDKs/MacOSX10.6.sdk -mfix-and-continue -mmacosx-version-min=10.6 -gdwarf-2 -iquote "/Users/scottjacksonx/Documents/Xcode Projects/Cocoa Challenges/Throttle/build/Throttle.build/Debug/Throttle.build/Throttle-generated-files.hmap" "-I/Users/scottjacksonx/Documents/Xcode Projects/Cocoa Challenges/Throttle/build/Throttle.build/Debug/Throttle.build/Throttle-own-target-headers.hmap" "-I/Users/scottjacksonx/Documents/Xcode Projects/Cocoa Challenges/Throttle/build/Throttle.build/Debug/Throttle.build/Throttle-all-target-headers.hmap" -iquote "/Users/scottjacksonx/Documents/Xcode Projects/Cocoa Challenges/Throttle/build/Throttle.build/Debug/Throttle.build/Throttle-project-headers.hmap" "-F/Users/scottjacksonx/Documents/Xcode Projects/Cocoa Challenges/Throttle/build/Debug" "-I/Users/scottjacksonx/Documents/Xcode Projects/Cocoa Challenges/Throttle/build/Debug/include" "-I/Users/scottjacksonx/Documents/Xcode Projects/Cocoa Challenges/Throttle/build/Throttle.build/Debug/Throttle.build/DerivedSources/x86_64" "-I/Users/scottjacksonx/Documents/Xcode Projects/Cocoa Challenges/Throttle/build/Throttle.build/Debug/Throttle.build/DerivedSources" -include /var/folders/Kp/KpHn0cygEBqp3Dbzc90q+E+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/Throttle_Prefix-dnahxwiqwcldozalszowtctksqef/Throttle_Prefix.pch -c "/Users/scottjacksonx/Documents/Xcode Projects/Cocoa Challenges/Throttle/AppController.m" -o "/Users/scottjacksonx/Documents/Xcode Projects/Cocoa Challenges/Throttle/build/Throttle.build/Debug/Throttle.build/Objects-normal/x86_64/AppController.o"0#
 
 CCompileC build/Throttle.build/Debug/Throttle.build/Objects-normal/x86_64/AppController.o /Users/scottjacksonx/Documents/dev/git/Throttle/AppController.m normal x86_64 objective-c com.apple.compilers.gcc.4_2
-s288934554.969420
-e288934555.147836
+s288969462.944165
+e288969463.375674
 r1
 xCompileC
 xbuild/Throttle.build/Debug/Throttle.build/Objects-normal/x86_64/AppController.o
@@ -282,7 +282,7 @@ xnormal
 xx86_64
 xobjective-c
 xcom.apple.compilers.gcc.4_2
-lSLF07#2@71"Compile /Users/scottjacksonx/Documents/dev/git/Throttle/AppController.m288934554#288934555#0(0"0(0#0#63"/Users/scottjacksonx/Documents/dev/git/Throttle/AppController.m4300882208#1587"    cd /Users/scottjacksonx/Documents/dev/git/Throttle    setenv LANG en_US.US-ASCII    /Developer/usr/bin/gcc-4.2 -x objective-c -arch x86_64 -fmessage-length=0 -pipe -std=gnu99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -isysroot /Developer/SDKs/MacOSX10.6.sdk -mfix-and-continue -mmacosx-version-min=10.6 -gdwarf-2 -iquote /Users/scottjacksonx/Documents/dev/git/Throttle/build/Throttle.build/Debug/Throttle.build/Throttle-generated-files.hmap -I/Users/scottjacksonx/Documents/dev/git/Throttle/build/Throttle.build/Debug/Throttle.build/Throttle-own-target-headers.hmap -I/Users/scottjacksonx/Documents/dev/git/Throttle/build/Throttle.build/Debug/Throttle.build/Throttle-all-target-headers.hmap -iquote /Users/scottjacksonx/Documents/dev/git/Throttle/build/Throttle.build/Debug/Throttle.build/Throttle-project-headers.hmap -F/Users/scottjacksonx/Documents/dev/git/Throttle/build/Debug -I/Users/scottjacksonx/Documents/dev/git/Throttle/build/Debug/include -I/Users/scottjacksonx/Documents/dev/git/Throttle/build/Throttle.build/Debug/Throttle.build/DerivedSources/x86_64 -I/Users/scottjacksonx/Documents/dev/git/Throttle/build/Throttle.build/Debug/Throttle.build/DerivedSources -include /var/folders/Kp/KpHn0cygEBqp3Dbzc90q+E+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/Throttle_Prefix-dvpdmotvlthsmjdluoihwvtzlcyy/Throttle_Prefix.pch -c /Users/scottjacksonx/Documents/dev/git/Throttle/AppController.m -o /Users/scottjacksonx/Documents/dev/git/Throttle/build/Throttle.build/Debug/Throttle.build/Objects-normal/x86_64/AppController.o0#
+lSLF07#2@71"Compile /Users/scottjacksonx/Documents/dev/git/Throttle/AppController.m288969462#288969463#0(0"0(0#0#63"/Users/scottjacksonx/Documents/dev/git/Throttle/AppController.m7886488416478786560#1587"    cd /Users/scottjacksonx/Documents/dev/git/Throttle    setenv LANG en_US.US-ASCII    /Developer/usr/bin/gcc-4.2 -x objective-c -arch x86_64 -fmessage-length=0 -pipe -std=gnu99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -isysroot /Developer/SDKs/MacOSX10.6.sdk -mfix-and-continue -mmacosx-version-min=10.6 -gdwarf-2 -iquote /Users/scottjacksonx/Documents/dev/git/Throttle/build/Throttle.build/Debug/Throttle.build/Throttle-generated-files.hmap -I/Users/scottjacksonx/Documents/dev/git/Throttle/build/Throttle.build/Debug/Throttle.build/Throttle-own-target-headers.hmap -I/Users/scottjacksonx/Documents/dev/git/Throttle/build/Throttle.build/Debug/Throttle.build/Throttle-all-target-headers.hmap -iquote /Users/scottjacksonx/Documents/dev/git/Throttle/build/Throttle.build/Debug/Throttle.build/Throttle-project-headers.hmap -F/Users/scottjacksonx/Documents/dev/git/Throttle/build/Debug -I/Users/scottjacksonx/Documents/dev/git/Throttle/build/Debug/include -I/Users/scottjacksonx/Documents/dev/git/Throttle/build/Throttle.build/Debug/Throttle.build/DerivedSources/x86_64 -I/Users/scottjacksonx/Documents/dev/git/Throttle/build/Throttle.build/Debug/Throttle.build/DerivedSources -include /var/folders/Kp/KpHn0cygEBqp3Dbzc90q+E+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/Throttle_Prefix-dvpdmotvlthsmjdluoihwvtzlcyy/Throttle_Prefix.pch -c /Users/scottjacksonx/Documents/dev/git/Throttle/AppController.m -o /Users/scottjacksonx/Documents/dev/git/Throttle/build/Throttle.build/Debug/Throttle.build/Objects-normal/x86_64/AppController.o0#
 
 CCompileC build/Throttle.build/Debug/Throttle.build/Objects-normal/x86_64/ThrottleAppDelegate.o "/Users/scottjacksonx/Documents/Xcode Projects/Cocoa Challenges/Throttle/ThrottleAppDelegate.m" normal x86_64 objective-c com.apple.compilers.gcc.4_2
 s288862072.476665
@@ -345,12 +345,12 @@ x/Users/scottjacksonx/Documents/Xcode Projects/Cocoa Challenges/Throttle/English
 lSLF07#2@37"CompileXIB English.lproj/MainMenu.xib288876500#288876501#0(0"0(0#0#98"/Users/scottjacksonx/Documents/Xcode Projects/Cocoa Challenges/Throttle/English.lproj/MainMenu.xib4300882208#433"    cd "/Users/scottjacksonx/Documents/Xcode Projects/Cocoa Challenges/Throttle"    /Developer/usr/bin/ibtool --errors --warnings --notices --output-format human-readable-text --compile "/Users/scottjacksonx/Documents/Xcode Projects/Cocoa Challenges/Throttle/build/Debug/Throttle.app/Contents/Resources/English.lproj/MainMenu.nib" "/Users/scottjacksonx/Documents/Xcode Projects/Cocoa Challenges/Throttle/English.lproj/MainMenu.xib"0#
 
 CCompileXIB /Users/scottjacksonx/Documents/dev/git/Throttle/English.lproj/MainMenu.xib
-s288934108.893193
-e288934109.266366
+s288968937.388313
+e288968938.405545
 r1
 xCompileXIB
 x/Users/scottjacksonx/Documents/dev/git/Throttle/English.lproj/MainMenu.xib
-lSLF07#2@37"CompileXIB English.lproj/MainMenu.xib288934108#288934109#0(0"0(0#0#74"/Users/scottjacksonx/Documents/dev/git/Throttle/English.lproj/MainMenu.xib4300882208#355"    cd /Users/scottjacksonx/Documents/dev/git/Throttle    /Developer/usr/bin/ibtool --errors --warnings --notices --output-format human-readable-text --compile /Users/scottjacksonx/Documents/dev/git/Throttle/build/Debug/Throttle.app/Contents/Resources/English.lproj/MainMenu.nib /Users/scottjacksonx/Documents/dev/git/Throttle/English.lproj/MainMenu.xib0#
+lSLF07#2@37"CompileXIB English.lproj/MainMenu.xib288968937#288968938#0(0"0(0#0#74"/Users/scottjacksonx/Documents/dev/git/Throttle/English.lproj/MainMenu.xib30118247716159592#355"    cd /Users/scottjacksonx/Documents/dev/git/Throttle    /Developer/usr/bin/ibtool --errors --warnings --notices --output-format human-readable-text --compile /Users/scottjacksonx/Documents/dev/git/Throttle/build/Debug/Throttle.app/Contents/Resources/English.lproj/MainMenu.nib /Users/scottjacksonx/Documents/dev/git/Throttle/English.lproj/MainMenu.xib0#
 
 CCopyStringsFile "/Users/scottjacksonx/Documents/Xcode Projects/Cocoa Challenges/Throttle/build/Debug/Throttle.app/Contents/Resources/English.lproj/InfoPlist.strings" English.lproj/InfoPlist.strings
 s288862068.155386
@@ -365,13 +365,13 @@ CCopyStringsFile /Users/scottjacksonx/Documents/dev/git/Throttle/build/Debug/Thr
 r0
 
 CCpResource build/Debug/Throttle.app/Contents/Resources/README.md README.md
-s288934554.931163
-e288934554.969066
+s288955994.139835
+e288955994.215579
 r1
 xCpResource
 xbuild/Debug/Throttle.app/Contents/Resources/README.md
 xREADME.md
-lSLF07#2@14"Copy README.md288934554#288934554#0(0"0(0#0#57"/Users/scottjacksonx/Documents/dev/git/Throttle/README.md4300882208#353"    cd /Users/scottjacksonx/Documents/dev/git/Throttle    /Developer/Library/PrivateFrameworks/DevToolsCore.framework/Resources/pbxcp -exclude .DS_Store -exclude CVS -exclude .svn -resolve-src-symlinks /Users/scottjacksonx/Documents/dev/git/Throttle/README.md /Users/scottjacksonx/Documents/dev/git/Throttle/build/Debug/Throttle.app/Contents/Resources0#
+lSLF07#2@14"Copy README.md288955994#288955994#0(0"0(0#0#57"/Users/scottjacksonx/Documents/dev/git/Throttle/README.md28429397857009780#353"    cd /Users/scottjacksonx/Documents/dev/git/Throttle    /Developer/Library/PrivateFrameworks/DevToolsCore.framework/Resources/pbxcp -exclude .DS_Store -exclude CVS -exclude .svn -resolve-src-symlinks /Users/scottjacksonx/Documents/dev/git/Throttle/README.md /Users/scottjacksonx/Documents/dev/git/Throttle/build/Debug/Throttle.app/Contents/Resources0#
 
 CCpResource build/Debug/Throttle.app/Contents/Resources/cocoasudo cocoasudo
 s288869156.162225
@@ -402,14 +402,14 @@ xx86_64
 lSLF07#2@125"Link /Users/scottjacksonx/Documents/Xcode Projects/Cocoa Challenges/Throttle/build/Debug/Throttle.app/Contents/MacOS/Throttle288876501#288876501#0(0"0(0#0#0"4300882208#722"    cd "/Users/scottjacksonx/Documents/Xcode Projects/Cocoa Challenges/Throttle"    setenv MACOSX_DEPLOYMENT_TARGET 10.6    /Developer/usr/bin/gcc-4.2 -arch x86_64 -isysroot /Developer/SDKs/MacOSX10.6.sdk "-L/Users/scottjacksonx/Documents/Xcode Projects/Cocoa Challenges/Throttle/build/Debug" "-F/Users/scottjacksonx/Documents/Xcode Projects/Cocoa Challenges/Throttle/build/Debug" -filelist "/Users/scottjacksonx/Documents/Xcode Projects/Cocoa Challenges/Throttle/build/Throttle.build/Debug/Throttle.build/Objects-normal/x86_64/Throttle.LinkFileList" -mmacosx-version-min=10.6 -framework Cocoa -o "/Users/scottjacksonx/Documents/Xcode Projects/Cocoa Challenges/Throttle/build/Debug/Throttle.app/Contents/MacOS/Throttle"0#
 
 CLd /Users/scottjacksonx/Documents/dev/git/Throttle/build/Debug/Throttle.app/Contents/MacOS/Throttle normal x86_64
-s288934555.147927
-e288934555.189755
+s288969463.375768
+e288969463.419113
 r1
 xLd
 x/Users/scottjacksonx/Documents/dev/git/Throttle/build/Debug/Throttle.app/Contents/MacOS/Throttle
 xnormal
 xx86_64
-lSLF07#2@101"Link /Users/scottjacksonx/Documents/dev/git/Throttle/build/Debug/Throttle.app/Contents/MacOS/Throttle288934555#288934555#0(0"0(0#0#0"4300882208#592"    cd /Users/scottjacksonx/Documents/dev/git/Throttle    setenv MACOSX_DEPLOYMENT_TARGET 10.6    /Developer/usr/bin/gcc-4.2 -arch x86_64 -isysroot /Developer/SDKs/MacOSX10.6.sdk -L/Users/scottjacksonx/Documents/dev/git/Throttle/build/Debug -F/Users/scottjacksonx/Documents/dev/git/Throttle/build/Debug -filelist /Users/scottjacksonx/Documents/dev/git/Throttle/build/Throttle.build/Debug/Throttle.build/Objects-normal/x86_64/Throttle.LinkFileList -mmacosx-version-min=10.6 -framework Cocoa -o /Users/scottjacksonx/Documents/dev/git/Throttle/build/Debug/Throttle.app/Contents/MacOS/Throttle0#
+lSLF07#2@101"Link /Users/scottjacksonx/Documents/dev/git/Throttle/build/Debug/Throttle.app/Contents/MacOS/Throttle288969463#288969463#0(0"0(0#0#0"4300882208#592"    cd /Users/scottjacksonx/Documents/dev/git/Throttle    setenv MACOSX_DEPLOYMENT_TARGET 10.6    /Developer/usr/bin/gcc-4.2 -arch x86_64 -isysroot /Developer/SDKs/MacOSX10.6.sdk -L/Users/scottjacksonx/Documents/dev/git/Throttle/build/Debug -F/Users/scottjacksonx/Documents/dev/git/Throttle/build/Debug -filelist /Users/scottjacksonx/Documents/dev/git/Throttle/build/Throttle.build/Debug/Throttle.build/Objects-normal/x86_64/Throttle.LinkFileList -mmacosx-version-min=10.6 -framework Cocoa -o /Users/scottjacksonx/Documents/dev/git/Throttle/build/Debug/Throttle.app/Contents/MacOS/Throttle0#
 
 CProcessInfoPlistFile "/Users/scottjacksonx/Documents/Xcode Projects/Cocoa Challenges/Throttle/build/Debug/Throttle.app/Contents/Info.plist" Throttle-Info.plist
 s288862068.115848
@@ -464,10 +464,10 @@ x/Users/scottjacksonx/Documents/Xcode Projects/Cocoa Challenges/Throttle/build/D
 lSLF07#2@102"Touch /Users/scottjacksonx/Documents/Xcode Projects/Cocoa Challenges/Throttle/build/Debug/Throttle.app288876501#288876501#0(0"0(0#0#0"4300882208#202"    cd "/Users/scottjacksonx/Documents/Xcode Projects/Cocoa Challenges/Throttle"    /usr/bin/touch -c "/Users/scottjacksonx/Documents/Xcode Projects/Cocoa Challenges/Throttle/build/Debug/Throttle.app"0#
 
 CTouch /Users/scottjacksonx/Documents/dev/git/Throttle/build/Debug/Throttle.app
-s288934555.189853
-e288934555.192818
+s288969463.419208
+e288969463.424095
 r1
 xTouch
 x/Users/scottjacksonx/Documents/dev/git/Throttle/build/Debug/Throttle.app
-lSLF07#2@78"Touch /Users/scottjacksonx/Documents/dev/git/Throttle/build/Debug/Throttle.app288934555#288934555#0(0"0(0#0#0"4300882208#150"    cd /Users/scottjacksonx/Documents/dev/git/Throttle    /usr/bin/touch -c /Users/scottjacksonx/Documents/dev/git/Throttle/build/Debug/Throttle.app0#
+lSLF07#2@78"Touch /Users/scottjacksonx/Documents/dev/git/Throttle/build/Debug/Throttle.app288969463#288969463#0(0"0(0#0#0"4300882208#150"    cd /Users/scottjacksonx/Documents/dev/git/Throttle    /usr/bin/touch -c /Users/scottjacksonx/Documents/dev/git/Throttle/build/Debug/Throttle.app0#
 

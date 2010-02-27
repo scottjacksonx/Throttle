@@ -11,7 +11,7 @@
 
 @interface AppController : NSObject {
     IBOutlet NSTextField* textField;
-    IBOutlet NSPopUpButton* comboBox;
+    IBOutlet NSPopUpButton* unitsBox;
     IBOutlet NSButton* throttleButton;
     IBOutlet NSTextField* portField;
     IBOutlet NSButton* confirmPrefsButton;
@@ -21,6 +21,10 @@
     NSNumber* port;
     NSNumber* throttling;
 }
+
+@property(readwrite, assign) NSString* units;
+@property(readwrite, assign) NSNumber* amountToThrottleTo;
+@property(readwrite, assign) NSNumber* port;
 
 
 - (IBAction)toggleThrottling:(id)sender;

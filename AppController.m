@@ -11,6 +11,10 @@
 
 @implementation AppController
 
+@synthesize amountToThrottleTo;
+@synthesize units;
+@synthesize port;
+
 - (id)init
 {
     [super init];
@@ -18,44 +22,8 @@
     [self setValue:[NSNumber numberWithInt:5] forKey:@"amountToThrottleTo"];
     [self setValue:0 forKey:@"throttling"];
     [self setValue:[NSNumber numberWithInt:80] forKey:@"port"];
+    [prefsWindow center];
     return self;
-}
-
-- (NSNumber*)amountToThrottleTo
-{
-    NSLog(@"amount is %@", amountToThrottleTo);
-    return amountToThrottleTo;
-}
-
-- (void)setAmountToThrottleTo:(NSNumber*)n
-{
-    amountToThrottleTo = n;
-    NSLog(@"amount is now %@", amountToThrottleTo);
-    
-}
-
-- (NSString*)units
-{
-    NSLog(@"units is %@", units);
-    return units;
-}
-
-- (void)setUnits:(NSString*)s
-{
-    units = s;
-    NSLog(@"units is now %@", units);
-}
-
-- (NSNumber*)port
-{
-    NSLog(@"Port to throttle is %@", port);
-    return port;
-}
-
-- (void)setPort:(NSNumber*)n
-{
-    port = n;
-    NSLog(@"Port to throttle is now %@", port);
 }
 
 - (IBAction)toggleThrottling:(id)sender
@@ -99,7 +67,8 @@
             NSString* srcport = @"src-port";
             NSTask* throttleTask = [[NSTask alloc] init];
             [throttleTask setLaunchPath:cocoasudoPath];
-            arguments = [NSArray arrayWithObjects:ipfwPath, add, one, pipe, one, srcport, [port stringValue], nil];
+            arguments = [NSArray arrayWithObjects:ipfwPath,
+                         add, one, pipe, one, srcport, [port stringValue], nil];
             [throttleTask setArguments:arguments];
             [throttleTask launch];
             NSLog(@"cocoasudo launched with arguments: %@", arguments);
@@ -112,8 +81,8 @@
                 NSLog(@"Throttling bandwidth on port %@ to %@%@", port, amountToThrottleTo, units);
                 
                 [throttleButton setTitle:@"Cancel throttling"];
-                [textField setEditable:NO];
-                [textField setSelectable:NO];
+                [textField setEnabled:NO];
+                [unitsBox setEnabled:NO];
             } else {
                 NSLog(@"Permission not granted to begin throttling.");
             }
@@ -144,8 +113,8 @@
             NSLog(@"Throttling has stopped.");
             
             [throttleButton setTitle:@"Begin throttling"];
-            [textField setEditable:YES];
-            [textField setSelectable:YES];
+            [textField setEnabled:YES];
+            [unitsBox setEnabled:YES];
         } else {
             NSLog(@"Permission not granted to stop throttling.");
         }
