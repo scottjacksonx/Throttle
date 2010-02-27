@@ -8,15 +8,12 @@ My number-one use case for Throttle is this: while I'm waiting for a video to fi
 
 By default, Throttle will throttle bandwidth on port 80, but which port gets throttled can be changed in the Preferences window.
 
-At this point, Throttle is fairly sparse -- there's no pretty icon yet, nor is there a lot of error checking. There are also a few easy ways to break it.
-
-The easiest way I can think of to break Throttle is to start throttling and then close the application before turning throttling off.
-
-**If that happens or anything else goes wrong:**
-
-Open Terminal.app and run `sudo ipfw delete 1`. That will stop any bandwidth-throttling caused by Throttle.
-
 ##How To Use Throttle
 
-If you want to be a nerd, download the project and compile it yourself from source. If you want to be a civilian, download the project and look in `build/Debug/` and you'll find a premade Throttle.app there.
+If you want to be a nerd, download the project and compile it yourself from source. If you want to be a normal person, download the project and look in `build/Debug/` and you'll find a premade Throttle.app there.
+
+##TODO
+
+- Currently, Throttle gets your sudo privileges (you need to be root in order to throttle bandwidth) in a kinda hack-y way which means you have to enter your username+password way more often than you should. I'm working on that.
+- If you close the application by clicking on the red X button while throttling is turned on, throttling will stay on. If you accidentally do that, open up a terminal window and run `sudo ipfw delete 1`. That will get rid of any throttling caused by Throttle.
 
